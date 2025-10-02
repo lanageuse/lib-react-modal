@@ -1,14 +1,38 @@
-# react-component-module-frame
-## What is this project about?
-#### This template was built to make publishing react-components easy. All the basic settings such as tsconfig.json and package.json are done. It is up to you to modify the setting for your own taste.
+# @liron-0654/react-lib-modal
+
+## À propos de ce projet
+
+Ce composant Modal React a été conçu pour faciliter l'intégration de modales.
 
 -----------------------------------------------------------------------------------------------------------------------
 
-#### To download this project  
+#### Pour installer ce package  
+```bash
+npm install @liron-0654/react-lib-modal
 ```
-git clone https://github.com/tofusoup429/react-component-module-frame.git
+### 🚀 Utilisation rapide
+```bash
+import React from 'react';
+import { Modal, useModal } from '@liron-0654/react-lib-modal';
+
+function App() {
+  const modal = useModal();
+
+  return (
+    <div>
+      <button onClick={() => modal.openModal({
+        content: "Votre contenu ici !",
+        size: "medium"
+      })}>
+        Ouvrir la modal
+      </button>
+
+      <Modal
+        isOpen={modal.isOpen}
+        onClose={modal.closeModal}
+        options={modal.options}
+      />
+    </div>
+  );
+}
 ```
------------------------------------------------------------------------------------------------------------------------
-
-
-
