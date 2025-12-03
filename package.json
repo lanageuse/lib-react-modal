@@ -1,8 +1,8 @@
 {
   "name": "@liron-0654/react-lib-modal",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "React Modal component",
-  "homepage": "https://github.com/liron-0654/react-lib-modal",
+  "homepage": "https://github.com/lanageuse/lib-react-modal/tree/master",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
