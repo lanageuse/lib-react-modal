@@ -35,5 +35,4 @@ export interface ModalProps {
   children?: React.ReactNode;
   options?: ModalOptions;
   title?: string;
-  footer?: React.ReactNode;
 }
