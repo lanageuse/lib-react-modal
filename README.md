@@ -10,6 +10,12 @@ Ce composant Modal React a été conçu pour faciliter l'intégration de modales
 ```bash
 npm install @liron-0654/react-lib-modal
 ```
+### 🎨 Import du style (obligatoire)
+
+```js
+import '@liron-0654/react-lib-modal/style.css';
+```
+
 ### 🚀 Utilisation rapide
 ```bash
 import React from 'react';
@@ -34,5 +40,43 @@ function App() {
       />
     </div>
   );
+}
+```
+
+### `useModal()`
+Le hook retourne :
+```js
+{
+  isOpen: boolean;
+  options: ModalOptions;
+  openModal: (options?: Partial<ModalOptions>) => void;
+  closeModal: () => void;
+  toggleModal: (options?: Partial<ModalOptions>) => void;
+  updateOptions: (options: Partial<ModalOptions>) => void;
+}
+```
+
+### `<Modal />`
+Les Props du composnat Modal :
+```js
+{
+  isOpen: boolean;
+  onClose: () => void;
+  options?: ModalOptions;
+  title?: string;
+}
+```
+
+### ModalOptions
+
+```js
+{
+  position?: 'center' | 'top' | 'bottom' | 'left' | 'right' | 'custom';
+  size?: 'small' | 'medium' | 'large' | 'fullscreen' | 'auto';
+  content?: string
+  overlay?: boolean;
+  overlayClosable?: boolean;
+  escapeClosable?: boolean;
+  className?: string;
 }
 ```
