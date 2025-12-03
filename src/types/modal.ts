@@ -34,5 +34,4 @@ export interface ModalProps {
   onClose: () => void;
   children?: React.ReactNode;
   options?: ModalOptions;
-  title?: string;
 }

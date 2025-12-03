@@ -10,7 +10,6 @@ export const Modal: React.FC<ModalProps> = ({
   onClose,
   children,
   options = {},
-  title,
 }) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
@@ -93,7 +92,7 @@ export const Modal: React.FC<ModalProps> = ({
         style={getPositionStyles()}
         role="dialog"
         aria-modal="true"
-        aria-labelledby={title ? 'modal-title' : undefined}
+        aria-label="modal"
       >
           <div className="modal__header">
             <button

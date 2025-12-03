@@ -63,7 +63,6 @@ Les Props du composnat Modal :
   isOpen: boolean;
   onClose: () => void;
   options?: ModalOptions;
-  title?: string;
 }
 ```
 
