@@ -1,6 +1,6 @@
 {
   "name": "@liron-0654/react-lib-modal",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "React Modal component",
   "homepage": "https://github.com/lanageuse/lib-react-modal/tree/master",
   "main": "dist/index.js",
